@@ -1,0 +1,74 @@
+.carousel-image {
+    height: 600px;
+    object-fit: cover; 
+  }
+.card-img{
+    height: 200px;
+    object-fit: cover;
+}
+.btn-icon {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .btn-icon i {
+    font-size: 18px;
+  }
+  
+  .btn-icon:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+
+
+ 
+.navbar {
+    border-bottom: 2px solid #f1f1f1;
+    background-color: #343a40;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+    padding: 10px 15px;
+    transition: color 0.3s ease, transform 0.3s ease; 
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #ffd700; 
+    transform: scale(1.1); 
+  }
+  
+  .nav-item button.nav-link {
+    padding: 0; 
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #fff;
+  }
+
+
+
+
+ 
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); 
+    cursor: pointer; 
+  }
+  
+  

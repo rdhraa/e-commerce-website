@@ -3,7 +3,8 @@ import { BrowserRouter as Router,Routes,Route,Link,Navigate } from 'react-router
 import Home from './components/Home'
 import Login from './components/Login'
 import Products from './components/Products'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './index.css'
 
 
 const App = () => {
@@ -19,9 +20,13 @@ const App = () => {
 
     return (
     <Router>
-      <nav className='navbar navbar-expand-lg navbar-dark bg-dark'>
+      <nav className='navbar navbar-expand-lg navbar-dark bg-dark shadow-sm pb-4'>
         <div className='container-fluid'>
-          <ul className='navbar-nav'>
+        <span className="navbar-brand">
+            <i className="fas fa-laptop-house"></i> TechStore
+          </span>
+          
+          <ul className='navbar-nav d-flex justify-content-around w-100'>
             <li className='nav-item'>
                 <Link className='nav-link' to="/">Home</Link>
             </li>
@@ -38,6 +43,7 @@ const App = () => {
           </ul>
         </div>
       </nav>
+      
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -60,3 +66,5 @@ const App = () => {
 }
 
 export default App
+
+
