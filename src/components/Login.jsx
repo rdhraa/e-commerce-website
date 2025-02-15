@@ -34,7 +34,6 @@ const Login = ({onLogin}) => {
         try {
             const response = await axios.post("https://products-api-4-e3wr.onrender.com/user",data)
             console.log(response.data)
-            alert(response.data.message)
             onLogin()
             navigate('/products')
         } catch (error) {
