@@ -3,6 +3,8 @@ import { BrowserRouter as Router,Routes,Route,Link,Navigate } from 'react-router
 import Home from './components/Home'
 import Login from './components/Login'
 import Products from './components/Products'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const App = () => {
   
@@ -37,22 +39,6 @@ const App = () => {
         </div>
       </nav>
 
-      
-      {/* <Routes>
-        <Route path='/'element={<Home/>}/>
-        <Route path='/login'element={<Login onLogin={handleLogin}/>}/>
-        <Route path='/products'element={<Products/>}/>
-
-        
-            <Route path='/products' element={
-              <ProtectedRoute>
-                <Products isAuthenticated={isAuthenticated}>
-                </Products>
-              </ProtectedRoute>
-            }
-            />
-
-      </Routes> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login onLogin={handleLogin} />} />
