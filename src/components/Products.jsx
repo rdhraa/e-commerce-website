@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { Container, Row, Col, Card, Button,Spinner } from 'react-bootstrap'
-import './index.css';
+import '../index.css';
 function Products() {
   const [products, setProducts] = useState([])
   const [loading, setLoading] = useState(true)
